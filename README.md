@@ -25,3 +25,29 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Design decisions
+
+* Assumptions:
+    * Enums
+* Component breakdown
+    * Feature components -> Shopping cart
+* Commit convention
+* Generic components and why
+    * cabify-grid
+* Specific components and why
+* Project directory structure and why
+    * Future structure if the app grows
+* Cross component communication
+    * Services for feature components
+    * Event/property binding for presentational components
+* Future improvements
+    * Nrgx
+    * i18n system with json files with strings
+    * Make generic components more configurable
+    * Validation for more than one config for cabify-span
+* Stiling:
+    * Explain the differences in flex usage
+    * cabify-grid
+* Known issues
+    * Pixel differences
