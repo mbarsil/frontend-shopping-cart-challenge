@@ -1,0 +1,10 @@
+.row {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+:host:not(:first-child) .row{
+  margin-top: 32px;
+}

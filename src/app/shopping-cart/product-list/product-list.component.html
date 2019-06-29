@@ -1,18 +1,21 @@
 <section class="products">
     <cabify-header text="Shopping cart"></cabify-header>
 
-    <ul class="products-list tableHead">
-        <li class="products-list-title row">
-            <div class="col-product">Product details</div>
-            <div class="col-quantity">Quantity</div>
-            <div class="col-price">Price</div>
-            <div class="col-total">Total</div>
-        </li>
-    </ul>
+    <div class="tableHead">
+        <cabify-grid>
+            <cabify-row class="products-list-title">
+                <cabify-col class="col-product">Product details</cabify-col>
+                <cabify-col class="col-quantity">Quantity</cabify-col>
+                <cabify-col class="col-price">Price</cabify-col>
+                <cabify-col class="col-total">Total</cabify-col>
+            </cabify-row>
+        </cabify-grid>
+    </div>
 
-    <ul class="products-list">
-        <li class="product row">
-            <div class="col-product">
+    <cabify-grid>
+
+        <cabify-row class="product">
+            <cabify-col class="col-product">
                 <figure class="product-image">
                     <img src="../../../assets/img/shirt.png" alt="Shirt">
                     <div class="product-description">
@@ -20,21 +23,20 @@
                         <p class="product-code">Product code X7R2OPX</p>
                     </div>
                 </figure>
-            </div>
-            <div class="col-quantity">
-                <button class="count">-</button><input type="text" class="product-quantity" value="3"><button class="count">
-                +
-            </button>
-            </div>
-            <div class="col-price">
+            </cabify-col>
+            <cabify-col class="col-quantity">
+                <button class="count">-</button><input type="text" class="product-quantity" value="3"><button class="count">+</button>
+            </cabify-col>
+            <cabify-col class="col-price">
                 <span class="product-price">20</span><span class="product-currency currency">€</span>
-            </div>
-            <div class="col-total">
+            </cabify-col>
+            <cabify-col class="col-total">
                 <span class="product-price">60</span><span class="product-currency currency">€</span>
-            </div>
-        </li>
-        <li class="product row">
-            <div class="col-product">
+            </cabify-col>
+        </cabify-row>
+
+        <cabify-row class="product">
+            <cabify-col class="col-product">
                 <figure class="product-image">
                     <img src="../../../assets/img/mug.png" alt="Mug">
                     <div class="product-description">
@@ -42,21 +44,20 @@
                         <p class="product-code">Product code X2G2OPZ</p>
                     </div>
                 </figure>
-            </div>
-            <div class="col-quantity">
-                <button class="count">-</button><input type="text" class="product-quantity" value="4"><button class="count">
-                +
-            </button>
-            </div>
-            <div class="col-price">
-                <span class="product-price">5</span><span class="product-currency currency">€</span>
-            </div>
-            <div class="col-total">
+            </cabify-col>
+            <cabify-col class="col-quantity">
+                <button class="count">-</button><input type="text" class="product-quantity" value="4"><button class="count">+</button>
+            </cabify-col>
+            <cabify-col class="col-price">
                 <span class="product-price">20</span><span class="product-currency currency">€</span>
-            </div>
-        </li>
-        <li class="product row">
-            <div class="col-product">
+            </cabify-col>
+            <cabify-col class="col-total">
+                <span class="product-price">60</span><span class="product-currency currency">€</span>
+            </cabify-col>
+        </cabify-row>
+
+        <cabify-row class="product">
+            <cabify-col class="col-product">
                 <figure class="product-image">
                     <img src="../../../assets/img/cap.png" alt="Cap">
                     <div class="product-description">
@@ -64,18 +65,17 @@
                         <p class="product-code">Product code X3W2OPY</p>
                     </div>
                 </figure>
-            </div>
-            <div class="col-quantity">
-                <button class="count">-</button><input type="text" class="product-quantity" value="4"><button class="count">
-                +
-            </button>
-            </div>
-            <div class="col-price">
+            </cabify-col>
+            <cabify-col class="col-quantity">
+                <button class="count">-</button><input type="text" class="product-quantity" value="4"><button class="count">+</button>
+            </cabify-col>
+            <cabify-col class="col-price">
                 <span class="product-price">10</span><span class="product-currency currency">€</span>
-            </div>
-            <div class="col-total">
+            </cabify-col>
+            <cabify-col class="col-total">
                 <span class="product-price">40</span><span class="product-currency currency">€</span>
-            </div>
-        </li>
-    </ul>
+            </cabify-col>
+        </cabify-row>
+    </cabify-grid>
+
 </section>

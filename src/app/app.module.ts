@@ -10,6 +10,9 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductListComponent } from './shopping-cart/product-list/product-list.component';
 import { OrderSummaryComponent } from './shopping-cart/order-summary/order-summary.component';
 import { ProductListRowComponent } from './shopping-cart/product-list/product-list-row/product-list-row.component';
+import { CabifyRowComponent } from './shared/components/cabify-row/cabify-row.component';
+import { CabifyColComponent } from './shared/components/cabify-col/cabify-col.component';
+import { CabifyGridComponent } from './shared/components/cabify-grid/cabify-grid.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ProductListRowComponent } from './shopping-cart/product-list/product-li
     ShoppingCartComponent,
     ProductListComponent,
     OrderSummaryComponent,
-    ProductListRowComponent
+    ProductListRowComponent,
+    CabifyRowComponent,
+    CabifyColComponent,
+    CabifyGridComponent
   ],
   imports: [
     BrowserModule,
