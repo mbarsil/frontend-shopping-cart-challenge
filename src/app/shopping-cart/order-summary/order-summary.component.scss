@@ -1,13 +1,14 @@
-.summary input,
-.summary ul li,
-.summary-total-cost {
-  font-size: 14px;
-  line-height: 17px;
+.wrapper.border,
+.wrapper-half.border {
+  border-bottom: 1px solid rgba(33, 34, 64, 0.16);
 }
 
-.summary-total-price {
-  font-size: 20px;
-  line-height: 25px;
+.wrapper {
+  padding: 32px 0;
+}
+
+.wrapper-half {
+  padding: 24px 0;
 }
 
 .summary {
@@ -22,11 +23,6 @@
 
 .summary > * {
   width: 100%;
-}
-
-.summary-items-price {
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .summary input {
@@ -61,14 +57,5 @@
   padding-bottom: 0;
   border-top: 1px solid rgba(33, 34, 64, 0.16);
   color: #212240;
-}
-
-.summary-total-cost {
-  flex-basis: 100%;
-  text-transform: uppercase;
-}
-
-.summary-total-price {
-  font-weight: bold;
 }
 

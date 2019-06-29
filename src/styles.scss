@@ -177,11 +177,6 @@ input::placeholder {
   opacity: 1;
 }
 
-.wrapper.border,
-.wrapper-half.border {
-  border-bottom: 1px solid rgba(33, 34, 64, 0.16);
-}
-
 h2{
   color: #a6a7b3;
   text-transform: uppercase;
@@ -222,14 +217,6 @@ h1 {
   letter-spacing: -0.18px;
   font-size: 18px;
   line-height: 24px;
-}
-
-.wrapper {
-  padding: 32px 0;
-}
-
-.wrapper-half {
-  padding: 24px 0;
 }
 
 input {

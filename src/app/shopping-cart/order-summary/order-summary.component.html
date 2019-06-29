@@ -2,21 +2,35 @@
     <cabify-header text="Order Summary"></cabify-header>
     <ul class="summary-items wrapper border">
         <li>
-            <span class="summary-items-number">11 Items</span><span class="summary-items-price">120<span class="currency">€</span></span>
+            <cabify-span [normal]="true">11 Items</cabify-span>
+            <cabify-span [medium]="true" [bold]="true">
+                120
+                <cabify-span class="currency" [medium]="true" [bold]="true">€</cabify-span>
+            </cabify-span>
         </li>
     </ul>
     <div class="summary-discounts wrapper-half border">
         <h2>Discounts</h2>
         <ul>
-            <li><span>2x1 Mug offer</span><span>-10€</span></li>
-            <li><span>x3 Shirt offer</span><span>-3€</span></li>
-            <li><span>Promo code</span><span>0€</span></li>
+            <li>
+                <cabify-span [normal]="true">2x1 Mug offer</cabify-span>
+                <cabify-span [normal]="true" [bold]="true">-10€</cabify-span>
+            </li>
+            <li>
+                <cabify-span [normal]="true">x3 Shirt offer</cabify-span>
+                <cabify-span [normal]="true" [bold]="true">-3€</cabify-span>
+            </li>
+            <li>
+                <cabify-span [normal]="true">Promo code</cabify-span>
+                <cabify-span [normal]="true" [bold]="true">0€</cabify-span>
+            </li>
         </ul>
     </div>
     <div class="summary-total wrapper">
         <ul>
             <li>
-                <span class="summary-total-cost">Total cost</span><span class="summary-total-price">107€</span>
+                <cabify-span [normal]="true" [caps]="true">Total cost</cabify-span>
+                <cabify-span [large]="true" [bold]="true">107€</cabify-span>
             </li>
         </ul>
         <cabify-button>Checkout</cabify-button>

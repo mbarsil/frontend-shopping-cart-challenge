@@ -1,1 +1,9 @@
-<p>cabify-span works!</p>
+<span [ngClass]="{
+        normal: normal,
+        medium: medium,
+        large: large,
+        caps: caps,
+        bold: bold
+    }">
+    <ng-content></ng-content>
+</span>

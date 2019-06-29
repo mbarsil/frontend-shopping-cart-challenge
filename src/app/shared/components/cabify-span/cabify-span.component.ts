@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'cabify-span',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabifySpanComponent implements OnInit {
 
+  @Input() normal: boolean;
+  @Input() medium: boolean;
+  @Input() large: boolean;
+  @Input() caps: boolean;
+  @Input() bold: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    console.log(this.normal, this.medium, this.large, this.caps, this.bold);
   }
 
 }
