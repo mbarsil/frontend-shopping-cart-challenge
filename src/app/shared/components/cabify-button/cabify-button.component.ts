@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-cabify-button',
+  selector: 'cabify-button',
   templateUrl: './cabify-button.component.html',
   styleUrls: ['./cabify-button.component.scss']
 })

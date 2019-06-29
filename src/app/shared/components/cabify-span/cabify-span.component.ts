@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-cabify-span',
+  selector: 'cabify-span',
   templateUrl: './cabify-span.component.html',
   styleUrls: ['./cabify-span.component.scss']
 })

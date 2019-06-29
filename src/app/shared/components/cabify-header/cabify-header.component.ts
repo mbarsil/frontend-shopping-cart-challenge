@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-cabify-header',
+  selector: 'cabify-header',
   templateUrl: './cabify-header.component.html',
   styleUrls: ['./cabify-header.component.scss']
 })
