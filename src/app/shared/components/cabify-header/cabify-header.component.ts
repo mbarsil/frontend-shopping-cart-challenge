@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'cabify-header',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cabify-header.component.scss']
 })
 export class CabifyHeaderComponent implements OnInit {
+
+
+  @Input() text: string;
 
   constructor() { }
 
