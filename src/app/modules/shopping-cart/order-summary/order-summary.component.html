@@ -2,9 +2,9 @@
     <cabify-header text="Order Summary"></cabify-header>
     <ul class="summary-items wrapper border">
         <li>
-            <cabify-span [normal]="true">11 Items</cabify-span>
+            <cabify-span [normal]="true">{{this.checkout.totalItems}} Items</cabify-span>
             <cabify-span [medium]="true" [bold]="true">
-                120
+                {{this.checkout.originalCost}}
                 <cabify-span [medium]="true" [bold]="true">€</cabify-span>
             </cabify-span>
         </li>
@@ -12,25 +12,20 @@
     <div class="summary-discounts wrapper-half border">
         <h2>Discounts</h2>
         <ul>
-            <li>
-                <cabify-span [normal]="true">2x1 Mug offer</cabify-span>
-                <cabify-span [normal]="true" [bold]="true">-10€</cabify-span>
-            </li>
-            <li>
-                <cabify-span [normal]="true">x3 Shirt offer</cabify-span>
-                <cabify-span [normal]="true" [bold]="true">-3€</cabify-span>
-            </li>
-            <li>
-                <cabify-span [normal]="true">Promo code</cabify-span>
-                <cabify-span [normal]="true" [bold]="true">0€</cabify-span>
-            </li>
+            <cabify-span *ngIf="discountsApplied.size === 0; else discounts" [normal]="true">No discounts</cabify-span>
+            <ng-template #discounts>
+                <li *ngFor="let d of discountsApplied">
+                    <cabify-span [normal]="true">{{d.description}}</cabify-span>
+                    <cabify-span [normal]="true" [bold]="true">adfasd</cabify-span>
+                </li>
+            </ng-template>
         </ul>
     </div>
     <div class="summary-total wrapper">
         <ul>
             <li>
                 <cabify-span [normal]="true" [caps]="true">Total cost</cabify-span>
-                <cabify-span [large]="true" [bold]="true">107€</cabify-span>
+                <cabify-span [large]="true" [bold]="true">{{this.checkout.totalCost}}€</cabify-span>
             </li>
         </ul>
         <cabify-button>Checkout</cabify-button>

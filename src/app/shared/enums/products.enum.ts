@@ -15,3 +15,9 @@ export const productNames = {
   TSHIRT: "Cabify T-Shirt",
   MUG: "Cabify Mug"
 };
+
+export const productImgs = {
+  CAP: "cap.png",
+  TSHIRT: "shirt.png",
+  MUG: "mug.png"
+};

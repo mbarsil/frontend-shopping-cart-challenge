@@ -2,17 +2,22 @@ export const discounts = {
   CAP:
     {
       description: '2x1 Mug offer',
+      condition: quantity => quantity >1,
       modifier: (pricePerUnit, quantity) => {
-        if ((quantity % 2) === 0) return (pricePerUnit * quantity)/2;
-        else return quantity;
+        if (quantity % 2 === 0) {
+          debugger;
+          return ((quantity)/2) * pricePerUnit;
+        }
+        else {
+          debugger;
+          return ((quantity)/2) * pricePerUnit + pricePerUnit;
+        }
       }
     },
   TSHIRT:
     {
       description: '3 or more T-Shirts offer',
-      modifier: (pricePerUnit, quantity) => {
-        if (quantity >= 3) return (pricePerUnit - 1) * quantity;
-        else return quantity;
-      }
+      condition: quantity => quantity >= 3,
+      modifier: (pricePerUnit, quantity) => (pricePerUnit - 1) * quantity
     }
 };
