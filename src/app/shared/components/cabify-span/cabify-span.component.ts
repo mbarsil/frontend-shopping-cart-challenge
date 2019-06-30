@@ -15,8 +15,6 @@ export class CabifySpanComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    console.log(this.normal, this.medium, this.large, this.caps, this.bold);
-  }
+  ngOnInit() { }
 
 }

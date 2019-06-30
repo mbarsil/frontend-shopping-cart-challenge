@@ -30,6 +30,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 * Assumptions:
     * Enums
+    * 0 quantity products are possible
+    * Discounts enum to handle possible various discounts 
+    for the same product. To come from API
+    
 * Component breakdown
     * Feature components -> Shopping cart
 * Commit convention
@@ -46,6 +50,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     * i18n system with json files with strings
     * Make generic components more configurable
     * Validation for more than one config for cabify-span
+    * Create discount model/service
 * Stiling:
     * Explain the differences in flex usage
     * cabify-grid
