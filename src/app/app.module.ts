@@ -9,7 +9,6 @@ import { CabifyButtonComponent } from './shared/components/cabify-button/cabify-
 import { ShoppingCartComponent } from './modules/shopping-cart/shopping-cart.component';
 import { ProductListComponent } from './modules/shopping-cart/product-list/product-list.component';
 import { OrderSummaryComponent } from './modules/shopping-cart/order-summary/order-summary.component';
-import { ProductListRowComponent } from './modules/shopping-cart/product-list/product-list-row/product-list-row.component';
 import { CabifyRowComponent } from './shared/components/cabify-row/cabify-row.component';
 import { CabifyColComponent } from './shared/components/cabify-col/cabify-col.component';
 import { CabifyGridComponent } from './shared/components/cabify-grid/cabify-grid.component';
@@ -23,7 +22,6 @@ import { CabifyGridComponent } from './shared/components/cabify-grid/cabify-grid
     ShoppingCartComponent,
     ProductListComponent,
     OrderSummaryComponent,
-    ProductListRowComponent,
     CabifyRowComponent,
     CabifyColComponent,
     CabifyGridComponent
