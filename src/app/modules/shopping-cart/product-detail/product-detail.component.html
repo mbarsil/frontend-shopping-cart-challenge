@@ -1,0 +1,19 @@
+<div class="product-detail">
+    <div class="product-image">
+        <img src="../../../../assets/img/tshirt@2x.jpg">
+    </div>
+    <div class="product-info">
+        <div class="name-price">
+            <cabify-span [medium]="true" [bold]="true">{{product.name}}</cabify-span>
+            <cabify-span [normal]="true" [bold]="true">{{product.price}} E</cabify-span>
+        </div>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu est aliquam ipsum tincidunt consectetur. Suspendisse ac gravida massa, quis gravida ex. Ut facilisis, dolor quis hendrerit fringilla, felis enim mollis augue, ut tristique purus nisi et tortor.
+        </p>
+        <div class="code">
+            Product code {{product.code}}
+        </div>
+        <cabify-button (click)="onAddClick()">Add to cart</cabify-button>
+
+    </div>
+</div>

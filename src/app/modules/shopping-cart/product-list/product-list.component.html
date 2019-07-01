@@ -12,14 +12,14 @@
         </cabify-grid>
     </div>
 
-    <cabify-modal *ngIf="showProdModal">
-        hello
+    <cabify-modal *ngIf="showProdModal" (modalClosed)="onCloseModal()">
+        <product-detail [product]="clickedProd" (productAddedToCart)="onAddToCart($event)"></product-detail>
     </cabify-modal>
 
     <cabify-grid>
         <cabify-row *ngFor="let p of products; index as i" class="product">
             <cabify-col class="col-product">
-                <figure class="product-image" (click)="onFigureClick($event, p.code)">
+                <figure class="product-image" (click)="onFigureClick($event, p)">
                     <img src="../../../../assets/img/{{p.img}}" alt="Shirt">
                     <div class="product-description">
                         <h1>{{p.name}}</h1>
@@ -28,9 +28,9 @@
                 </figure>
             </cabify-col>
             <cabify-col class="col-quantity">
-                <button class="count" (click)="onDecrease($event, p.code)">-</button>
+                <button class="count" (click)="onDecrease(p.code)">-</button>
                 <input type="text" class="product-quantity" value="{{p.quantity}}">
-                <button class="count" (click)="onIncrease($event, p.code)">+</button>
+                <button class="count" (click)="onIncrease(p.code)">+</button>
             </cabify-col>
             <cabify-col class="col-price">
                 <span class="product-price">{{p.price}}</span><span class="product-currency currency">€</span>

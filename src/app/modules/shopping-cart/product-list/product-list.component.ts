@@ -14,6 +14,7 @@ export class ProductListComponent implements OnInit {
   products : Product[];
   checkout: Checkout;
   showProdModal : boolean;
+  clickedProd : Product;
 
   constructor(private shoppingCartService: ShoppingCartService) { }
 
@@ -29,16 +30,25 @@ export class ProductListComponent implements OnInit {
       });
   }
 
-  onIncrease(event, prodCode) {
+  onIncrease(prodCode) {
     this.shoppingCartService.addProductUnit(prodCode);
   }
 
-  onDecrease(event, prodCode) {
+  onDecrease(prodCode) {
     this.shoppingCartService.removeProductUnit(prodCode);
   }
 
-  onFigureClick(event, prodCode) {
+  onFigureClick(event, prod) {
+    this.clickedProd = prod;
     this.showProdModal = true;
+  }
+
+  onCloseModal() {
+    this.showProdModal = false;
+  }
+
+  onAddToCart(product) {
+    this.onIncrease(product.code);
   }
 
 }

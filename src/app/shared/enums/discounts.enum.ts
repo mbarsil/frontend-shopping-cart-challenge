@@ -5,11 +5,9 @@ export const discounts = {
       condition: quantity => quantity >1,
       modifier: (pricePerUnit, quantity) => {
         if (quantity % 2 === 0) {
-          debugger;
           return ((quantity)/2) * pricePerUnit;
         }
         else {
-          debugger;
           return ((quantity)/2) * pricePerUnit + pricePerUnit;
         }
       }
