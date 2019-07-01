@@ -13,7 +13,14 @@ Some assumptions have been made to carry out the project, in order to follow a c
 * In the shopping cart, it is assumed that quantity 0 is possible at the current time, and given the task requirements. This is a "Product Owner decision", to improve in future iterations.
 
 # Project folder structure
+The project has been organized in a way that can easily be scaled, grouping componentes and other code files by features. This way, the application can easily grow by features, not having to add or modify files across the project but in the specific feature directory.
+
 ## Directory structure
+The application directory ```app``` is distributed as following:
+* ```modules/```: this directory holds the features of the application. In this case, the shopping cart. This feature components (see  *Componentization*). If a specific feature is added or modified, this is the directory to go to.
+Inside a feature directory, the specific components only used in it are also hosted, along with services, directives or other entities tied to the feature.
+* ```shared/```: here live all code entities 
+
 ## Scalability
 Add links
 # Componentization
