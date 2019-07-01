@@ -12,10 +12,14 @@
         </cabify-grid>
     </div>
 
+    <cabify-modal *ngIf="showProdModal">
+        hello
+    </cabify-modal>
+
     <cabify-grid>
         <cabify-row *ngFor="let p of products; index as i" class="product">
             <cabify-col class="col-product">
-                <figure class="product-image">
+                <figure class="product-image" (click)="onFigureClick($event, p.code)">
                     <img src="../../../../assets/img/{{p.img}}" alt="Shirt">
                     <div class="product-description">
                         <h1>{{p.name}}</h1>

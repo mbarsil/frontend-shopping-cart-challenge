@@ -12,6 +12,7 @@ import { OrderSummaryComponent } from './modules/shopping-cart/order-summary/ord
 import { CabifyRowComponent } from './shared/components/cabify-row/cabify-row.component';
 import { CabifyColComponent } from './shared/components/cabify-col/cabify-col.component';
 import { CabifyGridComponent } from './shared/components/cabify-grid/cabify-grid.component';
+import { CabifyModalComponent } from './shared/components/cabify-modal/cabify-modal.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CabifyGridComponent } from './shared/components/cabify-grid/cabify-grid
     OrderSummaryComponent,
     CabifyRowComponent,
     CabifyColComponent,
-    CabifyGridComponent
+    CabifyGridComponent,
+    CabifyModalComponent
   ],
   imports: [
     BrowserModule,

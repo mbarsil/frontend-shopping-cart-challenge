@@ -13,12 +13,14 @@ export class ProductListComponent implements OnInit {
 
   products : Product[];
   checkout: Checkout;
+  showProdModal : boolean;
 
   constructor(private shoppingCartService: ShoppingCartService) { }
 
   ngOnInit() {
     this.checkout = this.shoppingCartService.getCheckout();
     this.products = this.shoppingCartService.getProducts();
+    this.showProdModal = false;
 
     this.shoppingCartService.checkoutChanged.subscribe(
       (co: Checkout) => {
@@ -33,6 +35,10 @@ export class ProductListComponent implements OnInit {
 
   onDecrease(event, prodCode) {
     this.shoppingCartService.removeProductUnit(prodCode);
+  }
+
+  onFigureClick(event, prodCode) {
+    this.showProdModal = true;
   }
 
 }
