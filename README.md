@@ -56,3 +56,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     * cabify-grid
 * Known issues
     * Pixel differences
+    * Modal style
+    * Summary total discounted forgotten

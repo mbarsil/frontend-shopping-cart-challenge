@@ -12,7 +12,7 @@
         </cabify-grid>
     </div>
 
-    <cabify-modal *ngIf="showProdModal" (modalClosed)="onCloseModal()">
+    <cabify-modal [open]="showProdModal" (modalClosed)="onCloseModal()">
         <product-detail [product]="clickedProd" (productAddedToCart)="onAddToCart($event)"></product-detail>
     </cabify-modal>
 

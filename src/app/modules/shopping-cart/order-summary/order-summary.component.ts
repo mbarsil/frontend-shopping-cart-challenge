@@ -24,7 +24,6 @@ export class OrderSummaryComponent implements OnInit {
       (co: Checkout) => {
         this.checkout = co;
         this.discountsApplied = co.discountsApplied;
-        console.log(this.discountsApplied);
       });
   }
 

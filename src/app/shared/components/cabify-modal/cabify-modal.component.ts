@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'cabify-modal',
@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class CabifyModalComponent implements OnInit {
 
+  @Input() open : boolean = false;
   @Output() modalClosed = new EventEmitter<void>();
 
   constructor() { }

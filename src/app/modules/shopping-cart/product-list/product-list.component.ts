@@ -13,7 +13,7 @@ export class ProductListComponent implements OnInit {
 
   products : Product[];
   checkout: Checkout;
-  showProdModal : boolean;
+  showProdModal : boolean = false;
   clickedProd : Product;
 
   constructor(private shoppingCartService: ShoppingCartService) { }
