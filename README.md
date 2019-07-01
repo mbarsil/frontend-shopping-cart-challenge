@@ -2,38 +2,34 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
 
-## Development server
+# Overview
+This application has been created as solution for the problem proposed by Cabify as technical test. The chosen framework is Angular. The choice (over React as main competitor) is due to the ease of fulfilling the requirements for this task that the framework provides.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The original repository and its resources have been used in the application, following the framework established structure.
 
-## Code scaffolding
+# Assumptions
+Some assumptions have been made to carry out the project, in order to follow a certain flow and patterns:
+* The pricing rules are considered to be business information provided to the application. For this purpose, some ```enums``` have been created in the ```app/shared/enums``` folder, namely the discounts, and the information about products.
+* In the shopping cart, it is assumed that quantity 0 is possible at the current time, and given the task requirements. This is a "Product Owner decision", to improve in future iterations.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Project folder structure
+## Directory structure
+## Scalability
+Add links
+# Componentization
+## Generic components and feature components
+## Component breakdown
 
-## Build
+# Application flow and design
+## Models  
+## Cross-component communication
+## Service
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Future iterations/improvements
 
-## Running unit tests
+# Known issues
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## Design decisions
-
-* Assumptions:
-    * Enums
-    * 0 quantity products are possible
-    * Discounts enum to handle possible various discounts 
-    for the same product. To come from API
-    
 * Component breakdown
     * Feature components -> Shopping cart
 * Commit convention
@@ -51,6 +47,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     * Make generic components more configurable
     * Validation for more than one config for cabify-span
     * Create discount model/service
+    * Discounts enum to handle possible various discounts 
+    for the same product. To come from API
+    * Improve grid
 * Stiling:
     * Explain the differences in flex usage
     * cabify-grid
